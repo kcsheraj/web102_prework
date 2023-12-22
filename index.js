@@ -173,12 +173,21 @@ descriptionContainer.appendChild(descriptionElement);
 const firstGameContainer = document.getElementById("first-game");
 const secondGameContainer = document.getElementById("second-game");
 
+//sorted in decending order: most funded -> least funded
 const sortedGames = GAMES_JSON.sort((item1, item2) => {
   return item2.pledged - item1.pledged;
 });
 
 // use destructuring and the spread operator to grab the first and second games
+let [firstMostPlayed, secondMostPlayed, ...others] = sortedGames;
+console.log(firstMostPlayed.name);
+console.log(secondMostPlayed.name);
 
 // create a new element to hold the name of the top pledge game, then append it to the correct element
-
+const firstMostPlayedElement = document.createElement("div");
+firstMostPlayedElement.innerHTML = `${firstMostPlayed.name}`;
+firstGameContainer.appendChild(firstMostPlayedElement);
 // do the same for the runner up item
+const secondMostPlayedElement = document.createElement("div");
+secondMostPlayedElement.innerHTML = `${secondMostPlayed.name}`;
+secondGameContainer.appendChild(secondMostPlayedElement);
