@@ -191,3 +191,27 @@ firstGameContainer.appendChild(firstMostPlayedElement);
 const secondMostPlayedElement = document.createElement("div");
 secondMostPlayedElement.innerHTML = `${secondMostPlayed.name}`;
 secondGameContainer.appendChild(secondMostPlayedElement);
+
+/************************************************************************************
+ * Bonus: Search bar
+ */
+
+// grab the search input element
+const searchInput = document.getElementById("game-search");
+// add an input event listener to the search input
+searchInput.addEventListener("input", handleSearch);
+
+// create a function to handle the search functionality
+function handleSearch() {
+  // get search input in lowercase
+  const searchQuery = searchInput.value.toLowerCase();
+
+  // filter the games based on the search
+  const filteredGames = GAMES_JSON.filter((game) => {
+    return game.name.toLowerCase().includes(searchQuery);
+  });
+
+  // display the filtered games in the games container
+  deleteChildElements(gamesContainer);
+  addGamesToPage(filteredGames);
+}
