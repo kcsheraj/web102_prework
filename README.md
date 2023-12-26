@@ -23,6 +23,9 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented features:
 
+
+![Kapture 2023-12-25 at 23 26 26](https://github.com/kcsheraj/web102_prework/assets/88295555/98749e35-24f8-4408-bb68-40872c403981)
+
 <img src='https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdGN0cGFndGJ6cmZ3MTVjcmZyNm9kdTVwejB1d3pya3dsYmpjeTFpNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/tLCcVAh6zK95YBSLoo/giphy-downsized-large.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
